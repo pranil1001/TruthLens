@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Sparkles } from 'lucide-react';
 import { Header } from '../components/Header/Header';
+import { ScoreGauge } from '../components/ScoreGauge/ScoreGauge';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -15,8 +16,9 @@ export default function Popup() {
 
       {/* Main Container */}
       <main className="flex-1 p-4 space-y-4">
+        <ScoreGauge score={92} confidence={98} />
         {/* Foundation Hero Card Preview */}
-        <div className="glass-panel rounded-2xl p-5 border border-white/10 relative overflow-hidden text-center space-y-3">
+        <div className="glass-panel rounded-2xl p-5 border border-white/10 relative overflow-hidden text-center space-y-3 opacity-50">
           <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
           
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 text-xs font-medium border border-emerald-500/30">
@@ -25,18 +27,10 @@ export default function Popup() {
           </div>
 
           <div className="py-4">
-            <div className="text-5xl font-extrabold font-mono text-emerald-400 tracking-tight">
-              92<span className="text-xl text-slate-400 font-normal">/100</span>
-            </div>
             <div className="text-sm font-semibold text-slate-300 mt-1">Likely Credible Article</div>
             <p className="text-xs text-slate-400 mt-1 max-w-[280px] mx-auto">
               React 19 + TypeScript + Vite + Tailwind CSS extension architecture is fully compiled.
             </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-2 text-left pt-2 border-t border-white/5 text-xs text-slate-400 font-mono">
-            <div>Manifest: <span className="text-slate-200">V3</span></div>
-            <div>Build: <span className="text-emerald-400">Production Ready</span></div>
           </div>
         </div>
       </main>

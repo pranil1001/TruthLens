@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 10% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 20% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**21% Complete**
+**26% Complete**
 
 ---
 
@@ -60,21 +60,20 @@ Overall Project Progress
 
 ## Frontend UI
 - [x] Floating Header
+- [x] Score Gauge
 
 ---
 
 # Current Task
 
-Implement the Credibility Gauge component.
+Implement the Prediction Badge component.
 
 Requirements
-
-- Semi-circular animated gauge
-- Dynamic color mapping (Red -> Yellow -> Green)
-- Confidence percentage display
-- Smooth Framer Motion transitions
-- Professional Typography
-- Responsive for popup size
+- Dynamic labels (Trusted, Suspicious, Needs Verification)
+- Color-coded backgrounds based on score
+- Compact, high-visibility design
+- Subtle Framer Motion entrance
+- Integration with ScoreGauge output
 
 Status
 
