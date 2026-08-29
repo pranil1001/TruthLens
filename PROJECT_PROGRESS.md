@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 20% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 30% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**26% Complete**
+**31% Complete**
 
 ---
 
@@ -61,23 +61,21 @@ Overall Project Progress
 ## Frontend UI
 - [x] Floating Header
 - [x] Score Gauge
+- [x] Prediction Badge
 
 ---
 
 # Current Task
 
-Implement the Prediction Badge component.
+Implement the Warning Badges system.
 
 Requirements
-- Dynamic labels (Trusted, Suspicious, Needs Verification)
-- Color-coded backgrounds based on score
-- Compact, high-visibility design
-- Subtle Framer Motion entrance
-- Integration with ScoreGauge output
-
-Status
-
-🔄 Not Started
+- Create a reusable WarningBadge component
+- Support multiple types (Clickbait, Emotional Language, Missing Sources, AI Generated, etc.)
+- Semantic color coding for each warning type
+- Tooltip/Expandable explanation for each badge
+- Grid layout for multiple active warnings
+- Integration into Popup.tsx
 
 ---
 

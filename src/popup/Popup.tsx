@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Sparkles } from 'lucide-react';
 import { Header } from '../components/Header/Header';
 import { ScoreGauge } from '../components/ScoreGauge/ScoreGauge';
+import { PredictionBadge } from '../components/PredictionBadge/PredictionBadge';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -16,7 +17,10 @@ export default function Popup() {
 
       {/* Main Container */}
       <main className="flex-1 p-4 space-y-4">
-        <ScoreGauge score={92} confidence={98} />
+        <div className="flex flex-col items-center gap-4">
+          <ScoreGauge score={92} confidence={98} />
+          <PredictionBadge type="credible" confidence={98} />
+        </div>
         {/* Foundation Hero Card Preview */}
         <div className="glass-panel rounded-2xl p-5 border border-white/10 relative overflow-hidden text-center space-y-3 opacity-50">
           <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
