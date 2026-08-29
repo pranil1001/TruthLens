@@ -1,42 +1,17 @@
 import { useState } from 'react';
-import { Shield, Sparkles, Moon, Sun, Settings as SettingsIcon } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
+import { Header } from '../components/Header/Header';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
     <div className={`w-[420px] min-h-[700px] max-h-[700px] overflow-y-auto flex flex-col ${isDarkMode ? 'bg-[#0A0F1D] text-[#E2E8F0]' : 'bg-slate-50 text-slate-900'} relative`}>
-      {/* Floating Status Bar / Glass Header */}
-      <header className="sticky top-0 z-50 glass-header px-4 py-3 flex items-center justify-between shadow-lg">
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shadow-inner">
-            <Shield className="w-4 h-4" />
-          </div>
-          <div>
-            <h1 className="font-mono text-sm font-bold tracking-tight flex items-center gap-1.5">
-              TruthLens <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-normal">v1.0</span>
-            </h1>
-            <p className="text-[11px] text-slate-400 font-sans">AI Credibility Engine</p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-1.5">
-          <button 
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className="p-2 rounded-lg hover:bg-white/10 transition-colors text-slate-400 hover:text-slate-200"
-            title="Toggle theme"
-          >
-            {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-          </button>
-          <button 
-            onClick={() => chrome.runtime.openOptionsPage?.()}
-            className="p-2 rounded-lg hover:bg-white/10 transition-colors text-slate-400 hover:text-slate-200"
-            title="Settings"
-          >
-            <SettingsIcon className="w-4 h-4" />
-          </button>
-        </div>
-      </header>
+      <Header
+        isDarkMode={isDarkMode}
+        toggleTheme={() => setIsDarkMode(!isDarkMode)}
+        onOpenSettings={() => chrome.runtime.openOptionsPage?.()}
+      />
 
       {/* Main Container */}
       <main className="flex-1 p-4 space-y-4">

@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 0% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 10% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**16% Complete**
+**21% Complete**
 
 ---
 
@@ -58,20 +58,23 @@ Overall Project Progress
 - [x] Extension Scaffold
 - [x] Initial Folder Structure
 
+## Frontend UI
+- [x] Floating Header
+
 ---
 
 # Current Task
 
-Implement the Floating Header component.
+Implement the Credibility Gauge component.
 
 Requirements
 
-- Glassmorphism
-- Theme Toggle
-- Extension Status
-- Smooth Animation
-- Responsive Design
-- Framer Motion
+- Semi-circular animated gauge
+- Dynamic color mapping (Red -> Yellow -> Green)
+- Confidence percentage display
+- Smooth Framer Motion transitions
+- Professional Typography
+- Responsive for popup size
 
 Status
 
@@ -83,7 +86,6 @@ Status
 
 ## Frontend
 
-- Floating Header
 - Credibility Gauge
 - Prediction Badge
 - Warning Badges
