@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 30% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 40% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**31% Complete**
+**36% Complete**
 
 ---
 
@@ -62,20 +62,21 @@ Overall Project Progress
 - [x] Floating Header
 - [x] Score Gauge
 - [x] Prediction Badge
+- [x] Warning Badges
 
 ---
 
 # Current Task
 
-Implement the Warning Badges system.
+Implement the AI Summary component.
 
 Requirements
-- Create a reusable WarningBadge component
-- Support multiple types (Clickbait, Emotional Language, Missing Sources, AI Generated, etc.)
-- Semantic color coding for each warning type
-- Tooltip/Expandable explanation for each badge
-- Grid layout for multiple active warnings
+- Create a reusable AI Summary component
+- Glassmorphism design
+- Support for multi-line summaries
+- Subtle entrance animations
 - Integration into Popup.tsx
+- Mock data for now
 
 ---
 

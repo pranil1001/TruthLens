@@ -3,6 +3,7 @@ import { Sparkles } from 'lucide-react';
 import { Header } from '../components/Header/Header';
 import { ScoreGauge } from '../components/ScoreGauge/ScoreGauge';
 import { PredictionBadge } from '../components/PredictionBadge/PredictionBadge';
+import { WarningBadges } from '../components/WarningBadges/WarningBadges';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -20,6 +21,7 @@ export default function Popup() {
         <div className="flex flex-col items-center gap-4">
           <ScoreGauge score={92} confidence={98} />
           <PredictionBadge type="credible" confidence={98} />
+          <WarningBadges activeWarnings={['well-supported', 'ai-generated']} />
         </div>
         {/* Foundation Hero Card Preview */}
         <div className="glass-panel rounded-2xl p-5 border border-white/10 relative overflow-hidden text-center space-y-3 opacity-50">
