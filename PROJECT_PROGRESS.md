@@ -78,16 +78,16 @@ Overall Project Progress
 
 # Current Task
 
-Implement the Background Worker.
+Implement Chrome Storage and Message Passing.
 
 Requirements
-- Create src/background/index.ts (or update existing)
-- Handle messages from Content Script (ARTICLE_DETECTED)
-- Coordinate between Content Script and Popup
-- Implement initial state management for current article
-- Handle extension installation and updates
-- Mock the AI analysis pipeline for now
-- Integration with chrome.runtime and chrome.storage.local
+- Implement a robust communication layer between Popup, Background, and Content Script
+- Use chrome.storage.local for persisting:
+  - Current analyzed article
+  - Analysis results (Score, Summary, etc.)
+  - User settings (Theme, Notifications)
+- Create a dedicated storage utility to handle typed read/write operations
+- Implement 'State Sync' so Popup updates immediately when Background Worker finishes analysis
 - Run npm run build to verify
 - Stop after completing this task
 
@@ -104,7 +104,7 @@ Requirements
 ## Extension Logic
 
 - [x] Content Script (Article Detection & Extraction)
-- [ ] Background Worker
+- [x] Background Worker
 - [ ] Chrome Storage
 - [ ] Message Passing
 - [ ] Offline Mode
