@@ -3,6 +3,7 @@
 export interface ExtractedArticle {
   isNewsArticle: boolean;
   url: string;
+  canonicalUrl: string;
   domain: string;
   title: string;
   body: string;
@@ -63,6 +64,7 @@ function isNewsArticlePage(): boolean {
 function extractArticleDetails(): ExtractedArticle {
   const isNews = isNewsArticlePage();
   const url = window.location.href;
+  const canonicalUrl = document.querySelector('link[rel="canonical"]')?.getAttribute('href') || url;
   const domain = window.location.hostname.replace(/^www\./, '');
 
   // Extract Title
@@ -124,6 +126,7 @@ function extractArticleDetails(): ExtractedArticle {
   return {
     isNewsArticle: isNews,
     url,
+    canonicalUrl,
     domain,
     title,
     body: fullBody,

@@ -78,20 +78,18 @@ Overall Project Progress
 
 # Current Task
 
-Implement the Settings Page.
+Implement the Background Worker.
 
 Requirements
-- Create a dedicated settings view (overlay or separate page)
-- Options for:
-  - Theme toggle (Light/Dark/System)
-  - Notification preferences
-  - AI Model selection (if applicable)
-  - Language settings
-  - Privacy options
-- Use the existing glassmorphism design
-- Integration into Popup.tsx (via Header trigger)
-- Mock state management for settings
-- Persist settings using chrome.storage.local
+- Create src/background/index.ts (or update existing)
+- Handle messages from Content Script (ARTICLE_DETECTED)
+- Coordinate between Content Script and Popup
+- Implement initial state management for current article
+- Handle extension installation and updates
+- Mock the AI analysis pipeline for now
+- Integration with chrome.runtime and chrome.storage.local
+- Run npm run build to verify
+- Stop after completing this task
 
 ---
 
@@ -99,24 +97,19 @@ Requirements
 
 ## Frontend
 
-- Suspicious Phrases
-- Explainable AI Section
-- Related Articles
-- Action Bar
-- Settings Page
 - History Page
 
 ---
 
 ## Extension Logic
 
-- Content Script
-- Background Worker
-- Chrome Storage
-- Message Passing
-- Offline Mode
-- URL Detection
-- Smart Caching
+- [x] Content Script (Article Detection & Extraction)
+- [ ] Background Worker
+- [ ] Chrome Storage
+- [ ] Message Passing
+- [ ] Offline Mode
+- [ ] URL Detection
+- [ ] Smart Caching
 
 ---
 
