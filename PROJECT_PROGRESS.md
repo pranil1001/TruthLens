@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 60% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 70% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**41% Complete**
+**46% Complete**
 
 ---
 
@@ -65,17 +65,18 @@ Overall Project Progress
 - [x] Warning Badges
 - [x] AI Summary
 - [x] Source Reputation Card
+- [x] Trust Breakdown
 
 ---
 
 # Current Task
 
-Implement the Trust Breakdown component.
+Implement the Key Findings component.
 
 Requirements
-- Create a reusable TrustBreakdown component
-- Display breakdown of score contributors (Source, AI, etc.)
-- Use a detailed list or small progress bars
+- Create a reusable KeyFindings component
+- Display a list of critical observations
+- Use a "bullet-point" style with icons
 - Glassmorphism styling
 - Integration into Popup.tsx
 - Mock data for now
@@ -86,7 +87,6 @@ Requirements
 
 ## Frontend
 
-- Trust Breakdown
 - Key Findings
 - Headline Analysis
 - Suspicious Phrases

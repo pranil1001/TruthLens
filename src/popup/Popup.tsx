@@ -6,6 +6,7 @@ import { PredictionBadge } from '../components/PredictionBadge/PredictionBadge';
 import { WarningBadges } from '../components/WarningBadges/WarningBadges';
 import { AISummary } from '../components/AISummary/AISummary';
 import { SourceCard } from '../components/SourceCard/SourceCard';
+import { TrustBreakdown } from '../components/TrustBreakdown/TrustBreakdown';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -34,6 +35,16 @@ export default function Popup() {
           trustScore={95}
           category="Global News"
           reputation="high"
+        />
+        <TrustBreakdown
+          items={[
+            { label: 'Source Reputation', score: 90 },
+            { label: 'Evidence Quality', score: 85 },
+            { label: 'Citation Quality', score: 80 },
+            { label: 'Headline Reliability', score: 70 },
+            { label: 'Language Neutrality', score: 95 },
+            { label: 'AI Confidence', score: 98 },
+          ]}
         />
         {/* Foundation Hero Card Preview */}
         <div className="glass-panel rounded-2xl p-5 border border-white/10 relative overflow-hidden text-center space-y-3 opacity-50">
