@@ -19,11 +19,11 @@ Develop a production-quality AI-powered Chrome Extension that analyzes online ne
 
 Current Phase:
 
-> Phase 2 – Frontend UI Development
+> Phase 3 – Extension Logic
 
 Current Sprint:
 
-> Build the core popup user interface.
+> Implement content script and background worker for real-time analysis.
 
 ---
 
@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 90% |
+| Phase 2 - Frontend UI | ✅ Completed | 100% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**56% Complete**
+**65% Complete**
 
 ---
 
@@ -68,20 +68,30 @@ Overall Project Progress
 - [x] Trust Breakdown
 - [x] Key Findings
 - [x] Headline Analysis
+- [x] Suspicious Phrases
+- [x] Explainable AI Section
+- [x] Related Articles
+- [x] Action Bar
+- [x] Settings Page
 
 ---
 
 # Current Task
 
-Implement the Suspicious Phrases component.
+Implement the Settings Page.
 
 Requirements
-- Create a reusable SuspiciousPhrases component
-- Highlight manipulative or emotionally charged phrases from the article
-- Display the phrase and the reason why it's suspicious
+- Create a dedicated settings view (overlay or separate page)
+- Options for:
+  - Theme toggle (Light/Dark/System)
+  - Notification preferences
+  - AI Model selection (if applicable)
+  - Language settings
+  - Privacy options
 - Use the existing glassmorphism design
-- Integration into Popup.tsx
-- Mock data for now
+- Integration into Popup.tsx (via Header trigger)
+- Mock state management for settings
+- Persist settings using chrome.storage.local
 
 ---
 
