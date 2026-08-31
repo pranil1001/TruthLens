@@ -7,6 +7,7 @@ import { WarningBadges } from '../components/WarningBadges/WarningBadges';
 import { AISummary } from '../components/AISummary/AISummary';
 import { SourceCard } from '../components/SourceCard/SourceCard';
 import { TrustBreakdown } from '../components/TrustBreakdown/TrustBreakdown';
+import { KeyFindings } from '../components/KeyFindings/KeyFindings';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -44,6 +45,13 @@ export default function Popup() {
             { label: 'Headline Reliability', score: 70 },
             { label: 'Language Neutrality', score: 95 },
             { label: 'AI Confidence', score: 98 },
+          ]}
+        />
+        <KeyFindings
+          findings={[
+            { id: '1', type: 'positive', label: 'Verified Sources', explanation: 'Claims are supported by three independent, high-reputation news agencies.' },
+            { id: '2', type: 'neutral', label: 'Neutral Tone', explanation: 'The article avoids emotional adjectives and maintains a factual reporting style.' },
+            { id: '3', type: 'negative', label: 'Limited Data', explanation: 'Lacks specific quantitative data for some of the broader economic claims.' },
           ]}
         />
         {/* Foundation Hero Card Preview */}
