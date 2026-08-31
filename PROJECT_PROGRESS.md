@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 50% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 60% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -64,19 +64,19 @@ Overall Project Progress
 - [x] Prediction Badge
 - [x] Warning Badges
 - [x] AI Summary
+- [x] Source Reputation Card
 
 ---
 
 # Current Task
 
-Implement the Source Reputation Card.
+Implement the Trust Breakdown component.
 
 Requirements
-- Create a reusable SourceCard component
-- Display domain name, trust score, and category
-- Use a visual indicator for reputation (Low, Medium, High)
+- Create a reusable TrustBreakdown component
+- Display breakdown of score contributors (Source, AI, etc.)
+- Use a detailed list or small progress bars
 - Glassmorphism styling
-- Compact for the 420×700 popup
 - Integration into Popup.tsx
 - Mock data for now
 
@@ -86,7 +86,6 @@ Requirements
 
 ## Frontend
 
-- Source Reputation Card
 - Trust Breakdown
 - Key Findings
 - Headline Analysis

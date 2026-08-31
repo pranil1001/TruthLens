@@ -5,6 +5,7 @@ import { ScoreGauge } from '../components/ScoreGauge/ScoreGauge';
 import { PredictionBadge } from '../components/PredictionBadge/PredictionBadge';
 import { WarningBadges } from '../components/WarningBadges/WarningBadges';
 import { AISummary } from '../components/AISummary/AISummary';
+import { SourceCard } from '../components/SourceCard/SourceCard';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -27,6 +28,12 @@ export default function Popup() {
 
         <AISummary
           summary="This article provides a comprehensive analysis of recent economic trends, supported by multiple primary sources and verified data. It maintains a neutral tone and avoids sensationalism, focusing on factual reporting and expert insights."
+        />
+        <SourceCard
+          domain="reuters.com"
+          trustScore={95}
+          category="Global News"
+          reputation="high"
         />
         {/* Foundation Hero Card Preview */}
         <div className="glass-panel rounded-2xl p-5 border border-white/10 relative overflow-hidden text-center space-y-3 opacity-50">
