@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Zap, MessageCircle, Volume2, Type, AlertCircle } from 'lucide-react';
 import { Header } from '../components/Header/Header';
 import { ScoreGauge } from '../components/ScoreGauge/ScoreGauge';
 import { PredictionBadge } from '../components/PredictionBadge/PredictionBadge';
@@ -8,6 +8,7 @@ import { AISummary } from '../components/AISummary/AISummary';
 import { SourceCard } from '../components/SourceCard/SourceCard';
 import { TrustBreakdown } from '../components/TrustBreakdown/TrustBreakdown';
 import { KeyFindings } from '../components/KeyFindings/KeyFindings';
+import { HeadlineAnalysis } from '../components/HeadlineAnalysis/HeadlineAnalysis';
 
 export default function Popup() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -52,6 +53,16 @@ export default function Popup() {
             { id: '1', type: 'positive', label: 'Verified Sources', explanation: 'Claims are supported by three independent, high-reputation news agencies.' },
             { id: '2', type: 'neutral', label: 'Neutral Tone', explanation: 'The article avoids emotional adjectives and maintains a factual reporting style.' },
             { id: '3', type: 'negative', label: 'Limited Data', explanation: 'Lacks specific quantitative data for some of the broader economic claims.' },
+          ]}
+        />
+        <HeadlineAnalysis
+          overallAssessment="reliable"
+          metrics={[
+            { label: 'Clickbait', value: 'low', description: 'Low sensationalism', icon: Zap },
+            { label: 'Emotional Tone', value: 'low', description: 'Neutral language', icon: MessageCircle },
+            { label: 'Sensationalism', value: 'low', description: 'Factual framing', icon: Volume2 },
+            { label: 'Capitalization', value: 'low', description: 'Normal usage', icon: Type },
+            { label: 'Exaggeration', value: 'medium', description: 'Some overstatements', icon: AlertCircle },
           ]}
         />
         {/* Foundation Hero Card Preview */}

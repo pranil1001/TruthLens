@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 80% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 90% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**51% Complete**
+**56% Complete**
 
 ---
 
@@ -67,18 +67,19 @@ Overall Project Progress
 - [x] Source Reputation Card
 - [x] Trust Breakdown
 - [x] Key Findings
+- [x] Headline Analysis
 
 ---
 
 # Current Task
 
-Implement the Key Findings component.
+Implement the Suspicious Phrases component.
 
 Requirements
-- Create a reusable KeyFindings component
-- Display a list of critical observations
-- Use a "bullet-point" style with icons
-- Glassmorphism styling
+- Create a reusable SuspiciousPhrases component
+- Highlight manipulative or emotionally charged phrases from the article
+- Display the phrase and the reason why it's suspicious
+- Use the existing glassmorphism design
 - Integration into Popup.tsx
 - Mock data for now
 
@@ -88,8 +89,6 @@ Requirements
 
 ## Frontend
 
-- Key Findings
-- Headline Analysis
 - Suspicious Phrases
 - Explainable AI Section
 - Related Articles
