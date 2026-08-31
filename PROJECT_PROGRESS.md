@@ -32,7 +32,7 @@ Current Sprint:
 | Phase | Status | Progress |
 |---------|---------|---------|
 | Phase 1 - Project Setup | ✅ Completed | 100% |
-| Phase 2 - Frontend UI | 🔄 In Progress | 40% |
+| Phase 2 - Frontend UI | 🔄 In Progress | 50% |
 | Phase 3 - Extension Logic | ⏳ Not Started | 0% |
 | Phase 4 - Backend API | ⏳ Not Started | 0% |
 | Phase 5 - AI Integration | ⏳ Not Started | 0% |
@@ -40,7 +40,7 @@ Current Sprint:
 
 Overall Project Progress
 
-**36% Complete**
+**41% Complete**
 
 ---
 
@@ -63,18 +63,20 @@ Overall Project Progress
 - [x] Score Gauge
 - [x] Prediction Badge
 - [x] Warning Badges
+- [x] AI Summary
 
 ---
 
 # Current Task
 
-Implement the AI Summary component.
+Implement the Source Reputation Card.
 
 Requirements
-- Create a reusable AI Summary component
-- Glassmorphism design
-- Support for multi-line summaries
-- Subtle entrance animations
+- Create a reusable SourceCard component
+- Display domain name, trust score, and category
+- Use a visual indicator for reputation (Low, Medium, High)
+- Glassmorphism styling
+- Compact for the 420×700 popup
 - Integration into Popup.tsx
 - Mock data for now
 
@@ -84,10 +86,6 @@ Requirements
 
 ## Frontend
 
-- Credibility Gauge
-- Prediction Badge
-- Warning Badges
-- AI Summary
 - Source Reputation Card
 - Trust Breakdown
 - Key Findings
